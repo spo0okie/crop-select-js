@@ -455,7 +455,7 @@ CropSelectJs.prototype.handleImageLoad = function() {
 CropSelectJs.prototype.triggerSelectionResizeEvent = function() {
   $(this.elem).trigger(CropSelectJs.EVENT_NAME__SELECTION_RESIZE, {
     width: this.getSelectionBoxWidth(),
-    height: this.getSelectionBoxWidth(),
+    height: this.getSelectionBoxHeight(),
     widthScaledToImage: this.getScaledSelectionBoxWidth(),
     heightScaledToImage: this.getScaledSelectionBoxHeight()
   });
